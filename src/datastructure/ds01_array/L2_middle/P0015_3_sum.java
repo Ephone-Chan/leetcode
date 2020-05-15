@@ -1,8 +1,8 @@
-package middle;
+package datastructure.ds01_array.L2_middle;
 
 import java.util.*;
 
-public class ThreeSum {
+public class P0015_3_sum {
 
     /*
     排序后的双指针搜索
@@ -49,7 +49,7 @@ public class ThreeSum {
 
         int[] nums = {5, 5, 5, 5, 5, 5};
 
-        ThreeSum solution = new ThreeSum();
+        P0015_3_sum solution = new P0015_3_sum();
 
         System.out.println(solution.threeSum(nums));
     }

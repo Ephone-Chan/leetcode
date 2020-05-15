@@ -1,6 +1,6 @@
-package hard;
+package algorithm.alg04_backtrack.L3_hard;
 
-public class WildcardMatch {
+public class P0044_wildcard_matching {
 
 
     /*
@@ -9,7 +9,7 @@ public class WildcardMatch {
     如果遇到不相等的字符，则 i 回退至 i_star+1 重新与 j_star 开始匹配，将前面的字符作为与 * 进行了匹配，寄希望于在后续的位置中寻找与 * 之后相等的字符序列
     当模式串匹配到结尾时进行回退，让主串s继续向前推进，保持 * 号之后直至结束位置的字符序列相等
      */
-    public boolean isMatch(String s, String p) {
+    public static boolean isMatch(String s, String p) {
 
         boolean star = false;
 
@@ -69,7 +69,7 @@ public class WildcardMatch {
     /*
     使用新增一个末位的特殊字符实现模式串p到了终点的回退
      */
-    public boolean isMatch02(String s, String p) {
+    public static boolean isMatch02(String s, String p) {
 
         char[] s_arr = new char[s.length() + 1];
         s_arr[s.length()] = '\0';
@@ -119,10 +119,7 @@ public class WildcardMatch {
 
     public static void main(String[] args) {
 
-        WildcardMatch wildcardMatch = new WildcardMatch();
-
-        System.out.println(wildcardMatch.isMatch("abceb", "*a*b"));
-
+        System.out.println(isMatch("abceb", "*a*b"));
     }
 
 }

@@ -1,10 +1,10 @@
-package easy;
+package datastructure.ds01_array.L1_easy;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSum {
+public class P0001_two_sum {
 
 
     /*
